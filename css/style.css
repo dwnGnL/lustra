@@ -10,7 +10,9 @@ html {
 
 :root {
     --primary-color: #337ab7;
-    --seondary-color: #504d48;
+    --seondary-color: #504d48;    
+    --third-color: #CC0000;
+    --next-color: #90ad59;
 }
 
 a {
@@ -84,10 +86,7 @@ a {
     border-radius: 2px;
     z-index: 1;
 }
-.brands-Logo {
-    display: flex;
-    justify-content: space-around;
-}
+
 .search:target {
     display: block;
     z-index: 2;
@@ -170,7 +169,7 @@ a {
     color: #000;
 }
 .letters > a:hover {
-    color: #c00;
+    color: var(--third-color);
 }
 
 .twoBidCity {
@@ -182,7 +181,7 @@ a {
     color: #4a71b9;
 }
 .twoBidCity > a:hover {
-    color: #c00;
+    color: var(--third-color);
 }
 
 .cities{
@@ -201,7 +200,7 @@ a {
     padding-bottom: 15px;
 }
 .cityBox > a:hover {
-    color: #c00;
+    color: var(--third-color);
 }
 .title-info {
     color: #454545;
@@ -277,7 +276,7 @@ a {
     min-width: 380px;
 }
 .dropdown-content a:hover {
-    color:#CC0000;    
+    color: var(--third-color);    
 }
 .isDisabled {
     color: currentColor;
@@ -312,4 +311,172 @@ a {
     width: 1250px;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;    
+}
+
+.brands-Logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-1 {
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 93px;
+    grid-template-columns: 3fr 3fr 7fr 1fr 1fr 1fr 1fr;
+    padding: 14px 0;
+    grid-column-gap: 20px;
+    background-color: #fff;
+}
+
+.row-1__box-1,
+.row-1__box-2,
+.row-1__box-4,
+.row-1__box-5,
+.row-1__box-6,
+.row-1__box-7 {
+    place-self: center;
+}
+
+.row-1__box-1 {
+    width: 160px;
+    height: 100%;
+}
+
+.row-1__box-1>img {
+    max-width: 100%;
+}
+
+.row-1__box-2>p {
+    font-size: 24px;
+    font-weight: 550;
+}
+
+.row-1__box-2 > a  {
+    color: var(--primary-color);
+}
+.row-1__box-2>a>span {
+    border-bottom: 1px dashed #000;
+}
+
+.row-1__box-2>a:hover span {
+    color: var(--third-color);
+    border: none;
+    transition: 1s;
+}
+
+.row-1__box-3 {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-3__search {
+    border: 2px solid #90ad59;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.box-3__search>p {
+    background: #f0efef;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    font-size: 13px;
+    color: var(--seondary-color);
+    height: 30px;
+    padding-left: 7px;
+    width: 100px;
+}
+
+.box-3__search>input {
+    font-size: 12px;
+    color: #000;
+    height: 40px;
+    width: 275px;
+    line-height: 40px;
+    background: none;
+    border: none;
+    padding: 0 0 0 14px;
+    outline: none;
+}
+
+.box-3__search>img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box-3__search>button {
+    height: 40px;
+    border: 2px solid #7db832;
+    min-width: 50px;
+    text-align: center;
+    background: #88bd3b;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+}
+.note {
+  margin-left: 10px;  
+}
+.note > p > a {
+    color: var(--primary-color);
+}
+.note > p > a > span {
+    border-bottom: 0.5px dashed #337ab7;
+}
+.note > p > a:hover span {
+    border: none;
+}
+
+.row-1_link {
+    position: relative;
+    color: #9D9D9D;    
+}
+.row-1_link:hover {
+    color: var(--next-color);
+    transition: 1s;
+}
+
+.row-1__box-4, .row-1__box-5, .row-1__box-6, .row-1__box-7 {
+    position: relative;
+}
+
+.row-1_box-4_drop, .row-1_box-5_drop, .row-1_box-6_drop, .row-1_box-7_drop {
+    position: absolute;
+    left: -250px;
+    top: 20px;
+    width: 340px;
+    border: 1px solid #eae9e9;
+    background: #fff;
+    border-radius: 2px;
+    padding: 0 8px 18px 8px;
+    z-index: 99;
+    margin-top: 10px;
+}
+.row-1_box-4_drop > h3,  
+.row-1_box-5_drop > h3, 
+.row-1_box-6_drop > h3, 
+.row-1_box-7_drop > h3
+{
+    color: #000;
+    padding: 10px 15px;
+    font-size: 18px;
+} 
+
+.l {
+    left: -280px;
+}
+
+.row-1_box-4_drop > p,
+.row-1_box-5_drop > p,
+.row-1_box-6_drop > p,
+.row-1_box-7_drop > p
+{
+    color: #000;
+    padding: 10px 15px 0 15px;
+    border-top: 1px solid #dedede;
 }
