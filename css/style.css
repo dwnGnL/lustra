@@ -549,6 +549,8 @@ a {
 }
 
 .row-3-left-aside {
+    position: relative;
+    z-index: 100;
     padding-bottom: 20px;
     grid-area: leftAside;
 }
@@ -835,6 +837,7 @@ a {
 }
 
 .row-3-left-aside-1 {
+    z-index: 2;
     padding-bottom: 20px;
     grid-area: leftAside1;
 }
