@@ -531,7 +531,7 @@ a {
 
 .row-3 {
     display: grid;
-    grid-template: 310px 147px 147px 205px 310px 82px 50px 123px 270px 410px 60px 490px / 2fr 6fr 1.5fr;
+    grid-template: 310px 147px 147px 205px 310px 82px 50px 123px 270px 410px 60px 320px 1fr 405px / 2fr 6fr 1.5fr;
     grid-template-areas: "leftAside main rightAside"
         "leftAside title title"
         "leftAside title title"
@@ -544,8 +544,11 @@ a {
         "brands galleryOffer3 galleryOffer3"
         "brands recomend recomend"
         ". recomend recomend"
+        ". internetShop internetShop"
+        ". reviewsBuyer reviewsBuyer"
     ;
     column-gap: 20px;
+    padding-bottom: 40px;
 }
 
 .row-3-left-aside {
@@ -1094,3 +1097,98 @@ a {
     outline: none;
 }
 
+.row-3-internetShop {
+    position: relative;
+    padding: 10px 0 28px 0;
+    margin-bottom: 20px;
+    grid-area: internetShop;
+}
+
+.row-3-internetShop>a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.internetShop__description {
+    margin-bottom: 1rem;
+}
+
+.row-3__reviewsBuyer {
+    background-color: #F0EEEA; 
+    grid-area: reviewsBuyer;
+}
+
+.row-3__reviewsBuyer>h2 {
+    font-size: 30px;
+    padding: 30px 50px;
+}
+
+.row-3__reviewsBuyer-grid {
+    padding: 0px 80px;
+    display: grid;
+    grid-template: 60px 150px 42px / 1fr 1fr 1fr;
+    grid-template-areas: "gridItem1 gridItem2 gridItem3"
+                         "gridItem1 gridItem2 gridItem3"
+                         "gridItem1 gridItem2 gridItem3";
+    column-gap: 20px; 
+    }
+
+.reviewsBuyer-grid__item-1 {
+    grid-area: gridItem1;
+    display: flex;
+    flex-direction: column;
+}
+.reviewsBuyer-grid__item-2 {
+    grid-area: gridItem2;
+    display: flex;
+    flex-direction: column;
+}
+.reviewsBuyer-grid__item-3 {
+    grid-area: gridItem3;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewsBuyer-grid__item-description {
+    color: #5a5a5a;
+    border-bottom: 1px solid #c1c1c1;
+    font: normal 13px Arial;
+    padding: 15px 0px;
+}
+
+.reviewsBuyer-grid__item-description-1 {
+    color: #5a5a5a;
+    padding: 15px 0px;
+    font: normal 11px Arial;
+}
+.reviewsBuyer-grid__item-1 > figure {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c1c1c1;
+}
+.reviewsBuyer-grid__item-1 > figure > img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.reviewsBuyer-grid__item-2 > figure {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c1c1c1;
+}
+.reviewsBuyer-grid__item-2 > figure > img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.reviewsBuyer-grid__item-3 > figure {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c1c1c1;
+}
+.reviewsBuyer-grid__item-3 > figure > img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
