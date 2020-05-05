@@ -30,7 +30,7 @@ a {
 }
 
 .container {
-    width: 1280px;
+    max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -46,7 +46,8 @@ a {
     position: relative;
 }
 
- .first__link {
+
+.first__link {
     padding: 10px 12px;
     position: relative;
 }
