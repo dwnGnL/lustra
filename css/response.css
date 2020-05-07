@@ -12,6 +12,14 @@ html {
   display: block;
 }
 
+.container {
+  position: relative;
+}
+
+.aside {
+  position: absolute;
+}
+
 .row-1 {
   background-color: #E8E7E7;
   font-size: 14px;
