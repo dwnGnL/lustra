@@ -213,7 +213,7 @@ a:hover {
     border: 2px solid #90ad59;
 }
 
-.nav-2-column-3>p {
+.nav-2-column-3> select {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -221,9 +221,12 @@ a:hover {
     margin: 5px;
     background: #f0efef;
     padding-left: 7px;
+    border: none;
+    outline: none;
 }
 
 .nav-2-column-3>input {
+    width: 190px;
     font-size: 12px;
     color: #000;
     height: 40px;
@@ -234,16 +237,20 @@ a:hover {
     outline: none;
 }
 
-.nav-2-column-3__photo {
-    background: url("../img/header/camera2.svg") no-repeat;
+@media screen and  (min-width: 1200px) and (max-width: 1266px) {
+    .nav-2-column-3>input { 
+        width: 170px;
+    }
+}
+.photo {
+    background: url("../img/photo.svg") no-repeat;   
     background-position: center;
-    width: 40px;
+    width: 23px;
     height: 40px;
     margin: 0px 10px;
     cursor: pointer;
-    position: relative;
-}
-
+    position: relative; 
+  }
 .nav-2-column-3>button {
     position: absolute;
     right: 0;
@@ -544,6 +551,12 @@ a:hover {
     font-weight: bolder;
 }
 
+#accordion-1>h3:hover {
+    background-color: #DFDFDF;
+}
+#accordion-2>h3:hover {
+    background-color: #DFDFDF;
+}
 #accordion-2>nav {
     height: 0;
     overflow: hidden;
@@ -727,6 +740,7 @@ a:hover {
 @media screen and (max-width: 768px) {
     .ownCard {
         flex-direction: row;
+    border: 1px solid #e0e0e0;
     }
 }
 .ownCardImgLink {
@@ -801,22 +815,44 @@ a:hover {
 
 /* recomend */
 
-.media-link {
-    font-size: 12px;
-  }
-@media screen and (max-width: 1200px) {
-    .media-link {
-      font-size: 10px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .media-link {
-      font-size: 12px;
-    }
-  }
 
 
+  .recomend-card__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .recomend-card__right-img {
+      height: 150px;
+  }
+  @media screen and (max-width: 1100px) {
+    .recomend-card__right-img {
+        height: 120px;
+    }
+  }
+  @media screen and (max-width: 410px) {
+      .recomend-card__left > h5 {
+        font-size: 15px;
+        font-weight: bolder;
+      }
+    .recomend-card__nav > a {
+        font-size: 12px;
+        word-wrap: none;
+    }
+    .recomend-card__right-img {
+        height: 80px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .recomend-card__nav > a {
+        font-size: 11px;
+        word-wrap: none;
+    }
+    .recomend-card__right-img {
+        height: 60px;
+    }
+  }
   .right-0 {
     right: 0;
   }
@@ -824,3 +860,6 @@ a:hover {
   .bottom-0 {
     bottom: 0;
   }
+  
+
+
