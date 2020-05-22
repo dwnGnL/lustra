@@ -97,7 +97,7 @@ function showText(textEl) {
     textEl.style.height = textEl.scrollHeight + 'px';
 }
 
-console.log(1)
+
 
 
 
