@@ -377,8 +377,6 @@ a:hover {
     display: block;
     height: 38px;
     padding: 5px 5px 5px 42px;
-    background-color: #FAFAFA;
-    border-bottom: 1px solid #d6d6d6;
     color: var(--seondary-color);
 }
 .aside-nav > a:hover {
@@ -458,6 +456,7 @@ a:hover {
     margin-bottom: 20px;
 }
 
+
 .row-3__brands > a {
     text-align: center;
     margin-top: 2.6rem;
@@ -467,6 +466,11 @@ a:hover {
     display: block;
     height: 90px;
     line-height: 90px;
+}
+
+.accordion-nav-a {
+    background-color: #FAFAFA; 
+    border-bottom: 1px solid #d6d6d6;
 }
 
 #accordion-1 > h3 {
@@ -829,6 +833,9 @@ a:hover {
     border-radius: 2px;
 }
 
+.pl-41 {
+    padding-left: 41px;
+}
 .footer-nav > a:hover {
     color: var(--thirdColor);
 }
@@ -861,7 +868,6 @@ a:hover {
     font-size: 14px;
 }
 .footer-col-right > nav > a {
-    color: var(--secondColor);
     font: 12px/24px Arial, Helvetica, sans-serif;
     min-height: 24px;
 }
@@ -875,6 +881,81 @@ a:hover {
     font: 11px Arial, Helvetica, sans-serif;
     color: #4b4b4b;
 }
-.w-43 {
-    width: 43px;
+.copyright > a   {
+    color: #67C315;
+}
+.footer-link {
+    background-color: #F2F1F4;
+    color: var(--secondColor);
+}
+.footer-link:hover {
+    color: var(--thirdColor);
+    transition: 500ms;
+}
+
+.footer-col-right__info-link {
+    color: var(--firstColor);
+}
+.footer-col-right__info-link:hover {
+    color: var(--thirdColor);
+    transition: 500ms;
+}
+
+.footer-subscribe-link > a {
+    text-decoration: underline;
+}
+.footer-subscribe-link > a:hover {
+    text-decoration: none;
+    color: var(--secondColor);
+    transition: 500ms;
+}
+
+#user-link:hover {
+    transition: 500ms;
+    color: var(--thirdColor);
+}
+
+.footer-accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.8s;
+  }
+    
+  .footer-panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  .footer-panel-link {
+    display: block;
+    height: 38px;
+    padding: 5px 5px 5px 42px;
+    color: var(--seondary-color);
+  }
+
+.footer-border-bottom {
+    border-bottom: 1px solid #e4e4e4;
+}
+.footer-accordion-img {
+    width: 50px;
+}
+.footer-sm-form-1 {
+    display: none;
+}
+
+@media screen and (max-width: 632px) {
+    .footer-sm-form {
+        display: none;
+    }
+    .footer-sm-form-1 {
+        display: block;
+    }
+
 }
