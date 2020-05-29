@@ -65,6 +65,7 @@ a:hover {
     border-bottom: 2px solid #F6F6F6;
 }
 
+
 .header__content {
     min-height: 52px;
     margin: 0 auto;
@@ -73,6 +74,7 @@ a:hover {
     .header-container {
         max-width: 750px;
         padding: 0 15px;
+     
     }
 }
 
@@ -80,6 +82,100 @@ a:hover {
     font-size: 30px;
     cursor: pointer;
 }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FCFBFB;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.mySidenav-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.sidenav-link:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+}
+
+#span-close {
+    display: none;
+}
+
+#space-link {
+    display: block;
+    padding: 2px 0 19px;
+}
+
+
+
+
+.main-menu-link-bg {
+    color: #fff !important;
+    background-color: #9BC85B;
+}
+
+
+.main-menu-link {
+    display: block;
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    color: #24282b;
+    padding: 0 23px;
+    border-top: 1px solid #dcdcdc;
+}
+
+.personal-cabinet {
+    display: block;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    color: #24282b;
+    padding: 0px;
+    width: 100%;
+    background: #999;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+
+
+
 
 /*  nav-1-block */
 

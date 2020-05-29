@@ -99,18 +99,63 @@ function showText(textEl) {
 
 
 var acc = document.getElementsByClassName("footer-accordion");
+var acc1 = document.getElementsByClassName("main-menu-link");
+
+
+
+
+function accordions(arr) {
 var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (i = 0; i < arr.length; i++) {
+  arr[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
+}    
 }
+
+accordions(acc)
+accordions(acc1)
+
+
+
+
+var span = document.getElementById('span-open');
+var span1 = document.getElementById('span-close');
+
+span.addEventListener("click", openNav)
+span1.addEventListener("click", closeNav)
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("header").style.marginLeft = "250px";
+  document.getElementById("header").style.transition = "1s";
+  document.getElementById("main").style.transition = "1s";
+  document.getElementById("mySidenav").style.transition = "1s";
+  span.style.display = "none";
+  span1.style.display = 'block';
+  }
+
+
+
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("header").style.marginLeft = "0";
+  document.getElementById("header").style.transition = "1s";
+  document.getElementById("main").style.transition = "1s";
+  document.getElementById("mySidenav").style.transition = "1s";
+  span.style.display = "block";
+  span1.style.display = 'none';
+}
+
 
 
