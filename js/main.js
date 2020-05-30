@@ -18,6 +18,7 @@ var mySwiper = new Swiper('.swiper-container', {
         },
     }
 });
+
 var mySwiper1 = new Swiper('.swiper-container_1', {
     slidesPerView: 2,
     spaceBetween: 10,
@@ -36,6 +37,7 @@ var mySwiper1 = new Swiper('.swiper-container_1', {
         }
     }
 });
+
 var mySwiper2 = new Swiper('.swiper-container_2', {
     slidesPerView: 3,
     spaceBetween: 15,
@@ -49,6 +51,7 @@ var mySwiper2 = new Swiper('.swiper-container_2', {
         prevEl: '.swiper-button-prev',
     },
 });
+
 var mySwiper3 = new Swiper('.swiper-container_3', {
     slidesPerView: 1,
     loop: true,
@@ -99,16 +102,13 @@ function showText(textEl) {
 
 
 var acc = document.getElementsByClassName("footer-accordion");
-var acc1 = document.getElementsByClassName("main-menu-link");
+var acc1 = document.getElementsByClassName("accordion-menu-1")
+var acc2 = document.getElementsByClassName("accordion-menu-2")
+var acc3 = document.getElementsByClassName("accordion-menu-3")
 
 
-
-
-function accordions(arr) {
-var i;
-
-for (i = 0; i < arr.length; i++) {
-  arr[i].addEventListener("click", function() {
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -117,13 +117,45 @@ for (i = 0; i < arr.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
-}    
-}
-
-accordions(acc)
-accordions(acc1)
+} 
 
 
+for (let j = 0; j < acc1.length; j++) {
+  acc1[j].addEventListener("click", function() {
+    this.classList.add("active1");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+} 
+
+
+for (let k = 0; k < acc2.length; k++) {
+  acc2[k].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+} 
+
+for (let n = 0; n < acc3.length; n++) {
+  acc3[n].addEventListener("click", function() {
+    this.classList.toggle("active3");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+} 
 
 
 var span = document.getElementById('span-open');
@@ -141,6 +173,8 @@ function openNav() {
   document.getElementById("mySidenav").style.transition = "1s";
   span.style.display = "none";
   span1.style.display = 'block';
+  acc1[0].classList.add("active1")
+  acc3[0].classList.add("active3")
   }
 
 

@@ -12,16 +12,16 @@
         
         <div id="mySidenav" class="sidenav">
             <a href="#" id=space-link></a>
-            <a href="#" class="main-menu-link">Главное меню</a>
-            <nav class="mySidenav-panel">
-                <a href="#" class="main-menu-link">Распродажа</a>
+            <a href="#" class="main-menu-link accordion-menu-1" active>Главное меню</a>
+            <nav class="mySidenav-panel" style="max-height: 304px">
+                <a href="#" class="main-menu-link accordion-menu-2" >Распродажа</a>
                 <nav class="mySidenav-panel">
                     <a href="#" class="main-menu-link pl-5 ">Люстры</a>
                     <a href="#" class="main-menu-link pl-5 ">Люстры</a>
                     <a href="#" class="main-menu-link pl-5 ">Люстры</a>
                 </nav>
-                <a href="#" class="main-menu-link">Каталог</a>
-                <nav class="mySidenav-panel">
+                <a href="#" class="main-menu-link accordion-menu-3" active id="category-link">Каталог</a>
+                <nav class="mySidenav-panel" style="max-height: 152px">
                     <a href="#" class="main-menu-link pl-5">Люстры</a>
                     <a href="#" class="main-menu-link pl-5 ">Люстры</a>
                     <a href="#" class="main-menu-link pl-5 ">Люстры</a>
@@ -43,8 +43,8 @@
                         <div class="d-flex justify-content-between align-items-center">
                             
                             
-                            <span class="header-btn" id="span-open" onclick="openNav()">&#9776;
-                            </span>
+                            <a href="#category-link" class="header-btn" id="span-open" onclick="openNav()">&#9776;
+                            </a>
                             <span class="header-btn" id="span-close" onclick="closeNav()">&#9776;</span>
                             <img src="img/header/vslogo_9mm.png" class="d-none d-sm-block d-md-block" width="70" alt="">
                             <div class="header-form d-none d-sm-none d-md-none">

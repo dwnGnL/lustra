@@ -129,13 +129,54 @@ a:hover {
 
 
 
+.accordion-menu-1::after {
+    position: absolute;
+    top: 0;
+    right: 23px;
+    display: block;
+    height: 100%;
+    width: 6px;
+    content: "";
+    background: url("../img/arrow-menu-mob.png") no-repeat 0 50%;
+}
 
-.main-menu-link-bg {
+.accordion-menu-2::after {
+    position: absolute;
+    top: 0;
+    right: 23px;
+    display: block;
+    height: 100%;
+    width: 6px;
+    content: "";
+    background: url("../img/arrow-menu-mob.png") no-repeat 0 50%;
+}
+
+
+.accordion-menu-3::after {
+    position: absolute;
+    top: 0;
+    right: 23px;
+    display: block;
+    height: 100%;
+    width: 6px;
+    content: "";
+    background: url("../img/arrow-menu-mob.png") no-repeat 0 50%;
+}
+
+.active1, .accordion-menu-1:hover {
     color: #fff !important;
     background-color: #9BC85B;
 }
 
+.active2, .accordion-menu-2:hover {
+        color: #24282b;
+    background-color: #DFDFDF;
+}
 
+.active3, .accordion-menu-3:hover {
+        color: #24282b;
+    background-color: #DFDFDF;
+}
 .main-menu-link {
     display: block;
     position: relative;
