@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/aboutUs.css">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+            <a href="#" id=space-link></a>
+            <a href="#" class="main-menu-link accordion-menu-1" active>Главное меню</a>
+            <nav class="mySidenav-panel" style="max-height: 304px">
+                <a href="#" class="main-menu-link accordion-menu-2" >Распродажа</a>
+                <nav class="mySidenav-panel">
+                    <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                    <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                    <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                </nav>
+                <a href="#" class="main-menu-link accordion-menu-3" active id="category-link">Каталог</a>
+                <nav class="mySidenav-panel" style="max-height: 152px">
+                    <a href="#" class="main-menu-link pl-5">Люстры</a>
+                    <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                    <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                    <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                </nav>
+                <a href="#" class="main-menu-link">Акции</a>
+                <a href="#" class="main-menu-link">Шоу-рум</a>
+                <a href="#" class="personal-cabinet d-block">Доставка</a>
+                <a href="#" class="personal-cabinet d-block">Оплата</a>
+                <a href="#" class="personal-cabinet d-block">Подбор по фото</a>
+                <a href="#" class="personal-cabinet d-block">Контакты</a>
+            </nav>
+            <a href="#" class="personal-cabinet d-block" >Личный кабинет</a>
+        </div>
+        <div id="main">
+            <div class="wrapper" >
+                <div id="header" class="d-xl-none d-lg-none d-block d-sm-block d-md-block">
+                    <div class="header__content header-container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            
+                            
+                            <a href="#category-link" class="header-btn" id="span-open" onclick="openNav()">&#9776;
+                            </a>
+                            <span class="header-btn" id="span-close" onclick="closeNav()">&#9776;</span>
+                            <img src="img/header/vslogo_9mm.png" class="d-none d-sm-block d-md-block" width="70" alt="">
+                            <div class="header-form d-none d-sm-none d-md-none">
+                                <input type="text">
+                            </div>
+                            <img src="img/header/header-img-1.PNG">
+                            <img src="img/header/header-img-2.PNG">
+                            <img src="img/header/header-img-3.PNG">
+                            <img src="img/header/header-img-4.PNG">
+                            <img src="img/header/header-img-5.PNG">
+                            <img src="img/header/header-img-6.PNG">
+                            <a href="#" class="nav-1__link_1 d-md-block d-sm-block d-none">Личный ка...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row top-nav">
+                        <div class="col-12">
+                            <a href="#">
+                                <img src="img/bg-h.jpeg"
+                                class="mx-100 d-xl-block d-lg-block d-md-none d-sm-none d-none m-auto" />
+                                <img src="img/bg-h-mob.jpeg"
+                                class="mx-100 d-xl-none d-lg-none d-md-block d-sm-block d-block m-auto">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row px-18 nav-1 no-gutters d-none d-sm-none d-md-none d-lg-flex d-xl-flex">
+                        <div class="col-xl-2 col-lg-1">
+                            <a href="#" class="d-block nav-1__links">Москва</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-1 d-flex justify-content-around">
+                            <a href="#" class="nav-1__link nav-1__links   font-weight-bold">Магазин &nbsp;<span
+                                class="d-xl-inline d-lg-none">
+                            на Варшавке</span></a>
+                        </div>
+                        <div class="col-xl-8 col-lg-10 d-flex justify-content-around">
+                            <a href="#" class="nav-1__link nav-1__links   font-weight-bold">Шоу-рум</a>
+                            <a href="#" class="nav-1__link">Акции</a>
+                            <a href="#" class="nav-1__link">Помощь</a>
+                            <a href="#" class="nav-1__link">Оплата</a>
+                            <a href="#" class="nav-1__link">Доставка</a>
+                            <div class="dropdown">
+                                <a href="#" class="nav-1__link">О компании</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Новости</a>
+                                    <a href="#">Статьи</a>
+                                    <a href="#">Онлайн-примерочная</a>
+                                    <a href="#">Подбор освещения по фото</a>
+                                    <a href="#">Фотогалерия</a>
+                                </div>
+                            </div>
+                            <a href="#" class="nav-1__link">Бренды</a>
+                            <a href="#" class="nav-1__link">Контакты</a>
+                            <a href="#" class="nav-1__link nav-1__links  ">Личный кабинет</a>
+                        </div>
+                    </div>
+                    <div class="row px-18 py-14 nav-2 no-gutters d-none d-sm-none d-md-none d-lg-flex d-xl-flex">
+                        <div class="col-2">
+                            <a href="#" class="nav-2__1-link">
+                                <img src="img/header/vslogo_9m.png" class="mx-100">
+                            </a>
+                        </div>
+                        <div class="col-2 nav-2-column-2">
+                            <h5>8 (800) 551-01-06</h5>
+                            <a href="#"><span>Заказать обратный звонок</span></a>
+                        </div>
+                        <div class="col-xl-4 col-lg-3">
+                            <div class="nav-2-column-3">
+                                <select>
+                                    <option value="lustra">Все разделы </option>
+                                    <option value="lustra">Люстры</option>
+                                    <option value="lustra">Люстры</option>
+                                    <option value="lustra">Люстры</option>
+                                </select>
+                                <input type="text" placeholder="Поиск">
+                                <div class="photo">
+                                </div>
+                                <button>s</button>
+                                <div class="note">
+                                    <p>Например, <a href="#"><span>встраиваемые светильники</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 ml-lg-3 m-xl-0 d-flex justify-content-around">
+                            <div class="nav-2-column-4__block">
+                                <img src="img/nav-2__img/nav-2-_img-1.PNG" class="ml-auto mr-auto" alt="">
+                                <a href="#" class="dropdown">Примерка
+                                    <div class="dropdown-content nav-2-column-4__block__drop">
+                                        <h3>Примерка товары</h3>
+                                        <p>Добавьте товары для примерки</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nav-2-column-4__block">
+                                <img src="img/nav-2__img/nav-2-_img-2.PNG" class="nav-2-column-4__block-img-2 ml-auto mr-auto"
+                                alt="">
+                                <a href="#" class="dropdown">Сравнение
+                                    <div class="dropdown-content nav-2-column-4__block__drop">
+                                        <h3>Сравнение товаров</h3>
+                                        <p>Добавьте товары для сравнение</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nav-2-column-4__block">
+                                <img src="img/nav-2__img/nav-2-_img-3.PNG" class="ml-auto mr-auto" alt="">
+                                <a href="#" class="dropdown">Отложенные
+                                    <div class="dropdown-content nav-2-column-4__block__drop">
+                                        <h3>Отложенные товары</h3>
+                                        <p>Отложите понравившиеся товары</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nav-2-column-4__block">
+                                <img src="img/nav-2__img/nav-2-_img-4.PNG" class="ml-auto mr-auto" alt="">
+                                <a href="#" class="dropdown">Корзина
+                                    <div class="dropdown-content nav-2-column-4__block__drop">
+                                        <h3>Корзина</h3>
+                                        <p>Добавьте товары для покупки</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters nav-3 mb-4 d-none d-sm-none d-md-none d-xl-flex d-lg-flex">
+                        <ul id="nav" class="col-12">
+                            <li><a href="#">Весь каталог</a></li>
+                            <li><a href="#">Распродажа</a></li>
+                            <li><a href="#">Люстры</a></li>
+                            <li><a href="#">Светильники</a></li>
+                            <li><a href="#">Бра</a></li>
+                            <li><a href="#">Настольные лампы</a></li>
+                            <li><a href="#">Споты</a></li>
+                            <li><a href="#">Торшеры</a></li>
+                            <li><a href="#">Уличное освещение</a></li>
+                            <li><a href="#">Электротовары</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+			<main class="main">
+				<div class="container">
+					<div class="row no-gutters px-15">
+						<nav class="main-nav">
+							<a href="index.html">Вам свет</a>
+							<a href="#">О компании</a>
+						</nav>
+						<div class="w-100"></div>
+						<div>
+							<h3>О компании ВамСвет</h3>
+						</div>
+						<div class="w-100"></div>
+						<div class="main-description">
+							<p class="mb-3 main-title">“ВамСвет” - это больше, чем просто интернет-магазин люстр и светильников. Это полноценный сервис, с помощью которого каждый может стать дизайнером своего интерьера. И для этого не нужно иметь специальное образование или искать формулы для расчета мощности освещения</p>
+							<p class="mb-3">Для посетителей нашего сайта мы разработали удобные инструменты для подбора светильников:</p>
+							<ul class="pl-40 mb-10">
+								<li>Эффективные и функциональные фильтры по цвету, типу, помещению, стилю интерьера, количеству лампочек - и многие другие. С их помощью можно легко выделить интересующий ассортимент - в условиях невероятного выбора из более чем 120 000 моделей это крайне актуально!</li>
+								<li><a href="#">Подбор по фото</a> - можно просто загрузить снимок понравившегося светильника, а наши менеджеры в режиме реального времени подберут точно такой же или максимально похожий. 5 минут - и светильник мечты найден!</li>
+								<li><a href="#">Примерочная</a>. Любую выбранную модель можно сразу, еще до её покупки, “примерить” в спальню, гостиную или холл. Для этого достаточно сделать фото помещения, загрузить его на сайт и “надеть” на свой интерьер приглянувшуюся люстру. Всё гениальное просто - пара минут и станет очевидно - тот ли это светильник, который нужен!</li>
+								<li>Калькулятор. Светильник найден, выбран и отлично вписывается в интерьер. Но хватит ли его света? Не надо гадать! Воспользуйтесь простым и удобным калькулятором: отметьте размеры и высоту комнаты, а также желаемый уровень яркости в ней. И вуаля! Готов расчет по рекомендуемой мощности освещения!</li>
+							</ul>
+						</div>
+						<div class="w-100"></div>
+						
+						<div class="main-icons my-10">
+							<a href="#">
+								<i></i>
+								<span>Обратная связь</span>
+							</a>
+							<a href="#">
+								<i></i>
+								<span>Реквизиты</span>
+							</a>	
+						</div>
+						<div class="w-100"></div>
+						<div class="main-section-1 w-100">
+							<div class="main-section-1__content">
+								<div>
+								<img src="img/about/11_years.png" class="img-fluid" alt="">						
+								</div>
+								<p class="main-section-1__content-description">
+									Компания "ВамСвет" в бизнесе <br>
+								<span>светотехнического оборудования с 2008 года.</span>	
+								</p>
+								<p class="mb-3">Сплоченность нашей команды позволяет находиться в курсе всех событий в сфере производства светильников. Мы отслеживаем модные тенденции и предоставляем их на ваше обозрение</p>
+								<p class="mb-3">Правильная организация деятельности позволила за 11 лет вырасти нашему интернет-магазину до торгового холдинга с офисами продаж в главных городах России: Москве и Санкт-Петербурге. В компании 39 менеджеров, 5 отделов продаж, профессиональный call-центр, который работает круглосуточно 365 дней в году.</p>
+							</div>
+							<div class="main-section-1__content-bottom">
+								<div class="main-section-1__content-bottom__text">
+									142
+									<p>
+										сотрудника
+										<br>
+										<span>в двух столицах</span>
+									</p>
+								</div>
+								<div class="main-section-1__content-bottom__icons">
+									<div class="main-section-1__content-bottom__icons-item">
+										<img src="img/about/ico-02.svg" >
+									</div>
+									<div class="main-section-1__content-bottom__icons-item">
+										<img src="img/about/ico-03.svg" >
+									</div>
+								</div>		
+							</div>
+						</div>
+					</div>	
+					<!-- row -->
+
+				</div>	
+				<!-- container -->
+			</main>		
+
+            </div>
+			<!-- wrapper -->
+        </div>
+		  <!-- main -->
+
+
+        <script src="js/about.js"></script>
+</body>
+</html>
