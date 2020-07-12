@@ -764,17 +764,20 @@ a:hover {
     justify-content: center;
     align-items: center;
     background-color: #FAFAFA;
+    padding-bottom: 50px;
 }
 
 .box-link {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: center;
     background: rgba(255, 255, 255, 0.8);
     font: 16px/44px Arial, Helvetica, sans-serif;
 }
-.box-link > a {
-    color: #292929;
-}
+
+
 
 .box-nav {
     position: absolute;
@@ -805,6 +808,10 @@ a:hover {
 .box:hover .box-nav {
     opacity: 1;
 }
+
+.box-link > a {
+    color: #292929;
+}
 @media screen and (max-width: 768px) {
     .box {
         flex-direction: row;
@@ -817,6 +824,11 @@ a:hover {
         margin-right: 10px;
         width: 40px;
         height: 25px;
+        padding: 0;
+    }
+    .box-link {
+        position: static;
+        justify-content: flex-start;
     }
 }
 
