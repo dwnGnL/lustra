@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/recycleBin.css">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id=space-link></a>
+        <a href="#" class="main-menu-link accordion-menu-1" active>Главное меню</a>
+        <nav class="mySidenav-panel" style="max-height: 304px">
+            <a href="#" class="main-menu-link accordion-menu-2">Распродажа</a>
+            <nav class="mySidenav-panel">
+                <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+            </nav>
+            <a href="#" class="main-menu-link accordion-menu-3" active id="category-link">Каталог</a>
+            <nav class="mySidenav-panel" style="max-height: 152px">
+                <a href="#" class="main-menu-link pl-5">Люстры</a>
+                <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+                <a href="#" class="main-menu-link pl-5 ">Люстры</a>
+            </nav>
+            <a href="#" class="main-menu-link">Акции</a>
+            <a href="#" class="main-menu-link">Шоу-рум</a>
+            <a href="#" class="personal-cabinet d-block">Доставка</a>
+            <a href="#" class="personal-cabinet d-block">Оплата</a>
+            <a href="#" class="personal-cabinet d-block">Подбор по фото</a>
+            <a href="#" class="personal-cabinet d-block">Контакты</a>
+        </nav>
+        <a href="#" class="personal-cabinet d-block">Личный кабинет</a>
+    </div>
+    <div id="main">
+        <div class="wrapper">
+            <div id="header" class="d-xl-none d-lg-none d-block d-sm-block d-md-block">
+                <div class="header__content header-container">
+                    <div class="d-flex justify-content-between align-items-center">
+
+
+                        <a href="#category-link" class="header-btn" id="span-open" onclick="openNav()">&#9776;
+                        </a>
+                        <span class="header-btn" id="span-close" onclick="closeNav()">&#9776;</span>
+                        <img src="img/header/vslogo_9mm.png" class="d-none d-sm-block d-md-block" width="70" alt="">
+                        <div class="header-form d-none d-sm-none d-md-none">
+                            <input type="text">
+                        </div>
+                        <img src="img/header/header-img-1.PNG">
+                        <img src="img/header/header-img-2.PNG">
+                        <img src="img/header/header-img-3.PNG">
+                        <img src="img/header/header-img-4.PNG">
+                        <img src="img/header/header-img-5.PNG">
+                        <img src="img/header/header-img-6.PNG">
+                        <a href="#" class="nav-1__link_1 d-md-block d-sm-block d-none">Личный ка...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row top-nav">
+                    <div class="col-12">
+                        <a href="#">
+                            <img src="img/bg-h.jpeg"
+                                class="mx-100 d-xl-block d-lg-block d-md-none d-sm-none d-none m-auto" />
+                            <img src="img/bg-h-mob.jpeg"
+                                class="mx-100 d-xl-none d-lg-none d-md-block d-sm-block d-block m-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="row px-18 nav-1 no-gutters d-none d-sm-none d-md-none d-lg-flex d-xl-flex">
+                    <div class="col-xl-2 col-lg-1">
+                        <a href="#" class="d-block nav-1__links">Москва</a>
+                    </div>
+                    <div class="col-xl-2 col-lg-1 d-flex justify-content-around">
+                        <a href="#" class="nav-1__link nav-1__links   font-weight-bold">Магазин &nbsp;<span
+                                class="d-xl-inline d-lg-none">
+                                на Варшавке</span></a>
+                    </div>
+                    <div class="col-xl-8 col-lg-10 d-flex justify-content-around">
+                        <a href="#" class="nav-1__link nav-1__links   font-weight-bold">Шоу-рум</a>
+                        <a href="#" class="nav-1__link">Акции</a>
+                        <a href="#" class="nav-1__link">Помощь</a>
+                        <a href="#" class="nav-1__link">Оплата</a>
+                        <a href="#" class="nav-1__link">Доставка</a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-1__link">О компании</a>
+                            <div class="dropdown-content">
+                                <a href="#">Новости</a>
+                                <a href="#">Статьи</a>
+                                <a href="#">Онлайн-примерочная</a>
+                                <a href="#">Подбор освещения по фото</a>
+                                <a href="#">Фотогалерия</a>
+                            </div>
+                        </div>
+                        <a href="#" class="nav-1__link">Бренды</a>
+                        <a href="#" class="nav-1__link">Контакты</a>
+                        <a href="#" class="nav-1__link nav-1__links  ">Личный кабинет</a>
+                    </div>
+                </div>
+                <div class="row px-18 py-14 nav-2 no-gutters d-none d-sm-none d-md-none d-lg-flex d-xl-flex">
+                    <div class="col-2">
+                        <a href="/" class="nav-2__1-link">
+                            <img src="img/header/vslogo_9m.png" class="mx-100">
+                        </a>
+                    </div>
+                    <div class="col-2 nav-2-column-2">
+                        <h5>8 (800) 551-01-06</h5>
+                        <a href="#"><span>Заказать обратный звонок</span></a>
+                    </div>
+                    <div class="col-xl-4 col-lg-3">
+                        <div class="nav-2-column-3">
+                            <select>
+                                <option value="lustra">Все разделы </option>
+                                <option value="lustra">Люстры</option>
+                                <option value="lustra">Люстры</option>
+                                <option value="lustra">Люстры</option>
+                            </select>
+                            <input type="text" placeholder="Поиск">
+                            <div class="photo">
+                            </div>
+                            <button>s</button>
+                            <div class="note">
+                                <p>Например, <a href="#"><span>встраиваемые светильники</span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 ml-lg-3 m-xl-0 d-flex justify-content-around">
+                        <div class="nav-2-column-4__block">
+                            <img src="img/nav-2__img/nav-2-_img-1.PNG" class="ml-auto mr-auto" alt="">
+                            <a href="#" class="dropdown">Примерка
+                                <div class="dropdown-content nav-2-column-4__block__drop">
+                                    <h3>Примерка товары</h3>
+                                    <p>Добавьте товары для примерки</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-2-column-4__block">
+                            <img src="img/nav-2__img/nav-2-_img-2.PNG"
+                                class="nav-2-column-4__block-img-2 ml-auto mr-auto" alt="">
+                            <a href="#" class="dropdown">Сравнение
+                                <div class="dropdown-content nav-2-column-4__block__drop">
+                                    <h3>Сравнение товаров</h3>
+                                    <p>Добавьте товары для сравнение</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-2-column-4__block">
+                            <img src="img/nav-2__img/nav-2-_img-3.PNG" class="ml-auto mr-auto" alt="">
+                            <a href="#" class="dropdown">Отложенные
+                                <div class="dropdown-content nav-2-column-4__block__drop">
+                                    <h3>Отложенные товары</h3>
+                                    <p>Отложите понравившиеся товары</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-2-column-4__block position-relative">
+                            <img src="img/nav-2__img/nav-2-_img-4.PNG" class="ml-auto mr-auto" alt="">
+                            <span class="recycleBinCount">1</span>
+                            <div class="dropdown"><a href="#" class="nav-2-column-4__block-link">Корзина</a>
+                                <div class="dropdown-content nav-2-column-4__block__drop">
+                                    <h3 class="border-bottom">Корзина</h3>
+                                    <div class="d-flex pb-2 border-bottom pt-3">
+                                        <img src="img/recycleBin/mini_vamsvet_potolochnaya_lyustra_de_markt_city_olimpiya_638014310.jpeg"
+                                            width="55" class="ml-2">
+                                        <div class="d-flex flex-column ml-3 dropdown_box">
+                                            <a href="#" class="d-block">Потолочная люстра De Markt City Олимпия ...</a>
+                                            <span>1 960 руб.</span>
+                                        </div>
+                                        <div class="d-flex align-items-center dropdown_counter">
+                                            <span>1</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-wrap pt-2 pb-3 col">
+                                        <div class="d-flex justify-content-between w-100 pb-3">
+                                            <span class="bold">К оплате:</span>
+                                            <span class="bold">3 604 руб.</span>
+                                        </div>
+                                        <div class="d-flex w-100 justify-content-end">
+                                            <button class="dropdown_btn">Оформить заказ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters nav-3 mb-4 d-none d-sm-none d-md-none d-xl-flex d-lg-flex">
+                    <ul id="nav" class="col-12">
+                        <li><a href="#">Весь каталог</a></li>
+                        <li><a href="#">Распродажа</a></li>
+                        <li><a href="#">Люстры</a></li>
+                        <li><a href="#">Светильники</a></li>
+                        <li><a href="#">Бра</a></li>
+                        <li><a href="#">Настольные лампы</a></li>
+                        <li><a href="#">Споты</a></li>
+                        <li><a href="#">Торшеры</a></li>
+                        <li><a href="#">Уличное освещение</a></li>
+                        <li><a href="#">Электротовары</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <main class="main mb-4">
+                <div class="container">
+                    <div class="row no-gutters px-15 mb-4">
+                        <nav class="main-nav">
+                            <a href="index.html">Вам свет</a>
+                            <a href="#">Корзина</a>
+                        </nav>
+                        <div class="w-100 mb-4"></div>
+                        <h2>Корзина</h2>
+                        <div class="w-100 mb-2"></div>
+                        <nav>
+                            <a href="#" class="mr-3">Вернуться к покупкам</a>
+                            <a href="#">Кратко о доставке</a>
+                        </nav>
+                        <div class="w-100 mb-2"></div>
+                    </div>
+                    <!-- /.row -->
+                    <div class="row no-gutters px-15">
+                        <div class="col-xl-8">
+                            <div class="row mr-0">
+                                <div
+                                    class="col d-flex w-100 position-relative justify-content-around align-items-start border pt-2">
+                                    <img
+                                        src="img/recycleBin/mini_vamsvet_potolochnaya_lyustra_de_markt_city_olimpiya_638014310.jpeg">
+                                    <div class="d-flex flex-column ">
+                                        <a href="#">Потолочная люстра De Markt City Олимпия 638014310</a>
+                                        <p> De Markt (Германия)</p>
+                                        <a href="#">Не забудьте приобрести комплект лампочек</a>
+                                        <div class="pt-2">
+                                            <input type="checkbox">
+                                            <label for=""><a href="#"> Запросить стоимость установки</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="pt-4 recycleBinCount1">
+                                        <span>1</span>
+                                        <span>шт</span>
+                                    </div>
+                                    <div class="pt-3 d-flex flex-column ">
+                                        <div class="d-flex flex-column">
+                                            <span><s>5 390 руб.</s></span>
+                                            <span>1 960 руб.</span>
+                                        </div>
+                                        <a href="#" class="pb-3 pt-3">Перенести в отложенные</a>
+                                    </div>
+                                    <span class="badge-danger p-1 py-2 position-absolute left-0 top-0">-64%</span>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col d-flex w-100 border pr-20 pt-20 pl-20 flex-column pb-3 ">
+                                    <p class="ml-2">У вас есть <a href="#">промокод</a>  ?</p>
+                                    <div class="ml-2 standart-order-box d-flex">
+                                        <input type="text" placeholder="Введите промокод" class="p-2">
+                                        <button class="btn btn-success pt-2 pb-2">Применить</button>
+                                    </div>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col border">
+                                    <div class="row mt-4 pb-3">
+                                        <div
+                                            class="col-12 offset-0 col-md-6 offset-md-6 d-flex justify-content-between pb-2">
+                                            <span>
+                                                Общая стоимость товаров:
+                                            </span>
+                                            <span>
+                                                1 960 руб.
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="col-12 offset-0 col-md-6 offset-md-6 d-flex justify-content-between pb-2">
+                                            <span>
+                                                Стоимость доставки:
+                                            </span>
+                                            <span>
+                                                280 руб.
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="col-12 offset-0 col-md-6 offset-md-6 d-flex justify-content-between pb-2">
+                                            <span>(До бесплатной доставки осталось добавить <br> товаров на 1 040
+                                                руб.)</span>
+                                        </div>
+                                        <div
+                                            class="col-12 offset-0 col-md-6 offset-md-6 d-flex justify-content-between pb-2">
+                                            <span>
+                                                Итого к оплате:
+                                            </span>
+                                            <span>
+                                                2 240 руб.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mb-3"></div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h6 class="m-0">Заказ можно оформить и по телефону!</h6>
+                                            <h6 class="pb-2">Звоните:</h6>
+                                            <nav class="d-flex flex-column">
+                                                <span class="pb-1"><a href="#">8 (800) 100-75-80</a> Россия</span>
+                                                <span class="pb-1"><a href="#">8 (495) 662-56-76 </a> Москва</span>
+                                                <span class="pb-1"><a href="#">8 (812) 648-48-47</a>
+                                                    Санкт-Петербург</span>
+                                            </nav>
+                                        </div>
+                                        <div class="col-6">
+                                            <h6 class="pb-2">Доставка по Москве</h6>
+                                            <nav>
+                                                <span>Доставка до адреса: 280 руб.</span> <br>
+                                                <span>Доставка по пункта самовывоза: бесплатно</span> <br>
+                                                <span>Срок доставки: 1-2 дня</span>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row -->
+                        </div>
+                        <!-- col-8 -->
+                        <div class="col-xl-4 border">
+                            <div class="row no-gutters px-15">
+                                <div class="col-6 d-flex justify-content-start align-items-center pt-2 pl-2">
+                                    <span href="#">Стандартный <br> заказ</ы>
+                                </div>
+                                <div class="col-6 d-flex justify-content-center align-items-center pt-2">
+                                    <span href="#">Быстрый заказ</span>
+                                </div>
+                                <div class="w-100 mb-3"></div>
+                                <div class="col">
+                                    <form>
+                                        <div class="d-flex justify-content-between standart-order-box">
+                                            <label for="name" class="align-self-center">Имя
+                                            </label>
+                                            <input type="text" placeholder="Ваше имя" name="name" id="name">
+                                        </div>
+                                        <div class="d-flex justify-content-between standart-order-box">
+                                            <label for="tel" class="align-self-center">Телефон
+                                            </label>
+                                            <input type="tel" placeholder="уточним детали заказа" id="tel">
+                                        </div>
+                                        <div class="d-flex justify-content-between standart-order-box mb-2">
+                                            <label for="email" class="align-self-center">Email
+                                            </label>
+                                            <input type="text"
+                                                placeholder="отправим письмо для оповещения о статусе заказа"
+                                                id="email">
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-2">
+                                                Способ доставки
+                                            </div>
+                                            <div class="col">
+                                                <div>
+                                                    <input id="radio1" value="Курьером по Москве" type="radio"><label
+                                                        for="radio1" class="pl-2">
+                                                        Курьером по Москве ( 280 руб. )
+                                                    </label>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <input id="radio2" value="Курьером по Москве" type="radio"><label
+                                                        for="radio2" class="pl-2 pb-1 mb-0">
+                                                        Самовывоз с нашего склада
+                                                    </label><br>
+                                                    <a href="#" class="ml-4">Побробнее</a>
+                                                </div>
+                                                <div>
+                                                    <input id="radio3" value="Курьером по Москве" type="radio"><label
+                                                        for="radio3" class="pl-2 pb-1 mb-0">
+                                                        До транспортной компании ( 280 руб. )
+                                                    </label>
+                                                    <a href="#" class="ml-4">Побробнее</a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between standart-order-box">
+                                            <label for="list" class="align-self-center">Способ <br> оплаты
+                                            </label>
+                                            <select name="list" id="list" value="Наличный расчет">
+                                                <option value="Наличный расчет">Наличный расчет</option>
+                                                <option value="Банковской картой на сайте">Банковской картой на сайте</option>
+                                                <option value="Безналичный расчет">Безналичный расчет</option>
+                                                <option value="Карта рассрочки 'Совесть'">Карта рассрочки 'Совесть'</option>
+                                                <option value="Карта рассрочки 'Халва'">Карта рассрочки 'Халва'</option>
+                                            </select>
+                                        </div>
+                                        <div class="d-flex justify-content-between standart-order-box mb-3">
+                                            <label for="comment" class="align-self-center comment">Комментарий
+                                            </label>
+                                            <textarea placeholder="К примеру, не звонить, спит ребенок" name="comment"  class="commentText"></textarea>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center flex-column">
+                                            <button class="btn btn-success w-75 p-3 mb-3">Оформить заказ</button>
+                                                <div class="d-flex w-75">
+                                                    <input type="checkbox" class="footer-checkbox-input">
+                                                    <p class="footer-checkbox__descr">Я ознакомился и принимаю условия
+                                                    "Политики конфиденциальности" и "Информированного согласия"</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- container -->
+            </main>
+            <!-- main -->
+        </div>
+
+
+        <div class="befor-footer-link">
+            <div class="container">
+                <div class="row py-14">
+                    <div class="col">
+                        Доставка товаров по всей
+                        <a href="#">России</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row py-14 d-xl-flex d-lg-none d-md-none d-sm-none d-none">
+                    <div class="col footer-col">
+                        <nav class="footer-nav d-flex flex-column">
+                            <a href="#" class="d-block text-center mb-2">Распродажа</a>
+                            <a href="#" class="d-block text-center mb-2">Акции</a>
+                            <a href="#" class="d-block text-center mb-2">Шоу-Рум</a>
+                            <a href="#" class="d-block text-center mb-2">Уценка</a>
+                        </nav>
+                        <p class="mt-2 mb-2">
+                            Хотите быть в курсе акций <br />
+                            и новых товаров распродажи?
+                        </p>
+                        <input type="email" placeholder="Ваш e-mail" class="footer-email w-100 mb-2">
+                        <div class="footer-subscribe-link d-flex justify-content-end mb-2">
+                            <a href="#">Подписаться</a>
+                        </div>
+                        <div class="footer-checkbox d-flex justify-content-between">
+                            <input type="checkbox" class="footer-checkbox-input">
+                            <p class="footer-checkbox__descr">Я ознакомился и принимаю условия
+                                "Политики конфиденциальности" и "Информированного согласия"</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex footer-col">
+                        <div class="footer-col-left pr-2">
+                            <img src="img/footer/footer-img.PNG" class="mx-100" alt="">
+                        </div>
+                        <div class="footer-col-right">
+                            <h6 class="footer-col-title">КАТАЛОГ</h6>
+                            <nav>
+                                <a href="#" class="d-block footer-link">Люстры</a>
+                                <a href="#" class="d-block footer-link">Светильники</a>
+                                <a href="#" class="d-block footer-link">Бра и подсветки</a>
+                                <a href="#" class="d-block footer-link">Настольные лампы</a>
+                                <a href="#" class="d-block footer-link">Торшеры</a>
+                                <a href="#" class="d-block footer-link">Уличное освещение</a>
+                                <a href="#" class="d-block footer-link">Предметы интерьера</a>
+                                <a href="#" class="d-block footer-link">Лампочки</a>
+                                <a href="#" class="d-block footer-link">Электротовары</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col d-flex footer-col">
+                        <div class="footer-col-left pr-2">
+                            <img src="img/footer/footer-img-1.PNG" class="mx-100" alt="">
+                        </div>
+                        <div class="footer-col-right">
+                            <h6 class="footer-col-title">ПОМОЩЬ</h6>
+                            <nav>
+                                <a href="#" class="d-block footer-link">Как сделать заказ</a>
+                                <a href="#" class="d-block footer-link">Доставка</a>
+                                <a href="#" class="d-block footer-link">Оплата</a>
+                                <a href="#" class="d-block footer-link">Возврат</a>
+                                <a href="#" class="d-block footer-link">Гарантия</a>
+                                <a href="#" class="d-block footer-link">Юридическим лицам</a>
+                                <a href="#" class="d-block footer-link">Реквизиты</a>
+                                <a href="#" class="d-block footer-link">Виды ламп</a>
+                                <a href="#" class="d-block footer-link">Калькулятор мощности</a>
+                                <a href="#" class="d-block footer-link">Рейтинг люстр</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col footer-col">
+
+                        <div class="d-flex mb-2">
+                            <div class="footer-col-left pr-2">
+                                <img src="img/footer/footer-img-2.PNG" class="mx-100" alt="">
+                            </div>
+                            <div class="footer-col-right">
+                                <h6 class="footer-col-title">О КОМПАНИИ</h6>
+                                <nav>
+                                    <a href="#" class="d-block footer-link">О Вамсвет</a>
+                                    <a href="#" class="d-block footer-link">Помощь</a>
+                                    <a href="#" class="d-block footer-link">Новости</a>
+                                    <a href="#" class="d-block footer-link">Статьи</a>
+                                    <a href="#" class="d-block footer-link">Контакты</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="footer-col-left pr-2">
+                                <img src="img/footer/footer-img-3.PNG" class="mx-100" alt="">
+                            </div>
+                            <div class="footer-col-right">
+                                <h6 class="footer-col-title">УСЛУГИ</h6>
+                                <nav>
+                                    <a href="#" class="d-block footer-link">Установка светильников</a>
+                                    <a href="#" class="d-block footer-link">Подбор по фото</a>
+                                    <a href="#" class="d-block footer-link">Освещение в интерьере</a>
+                                    <a href="#" class="d-block footer-link">Онлайн-примерочная</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="d-flex">
+                            <div class="footer-col-left pr-2">
+                                <img src="img/footer/footer-img-4.PNG" class="mx-100" alt="">
+                            </div>
+                            <div class="footer-col-right">
+                                <h6 class="footer-col-title">ТЕЛЕФОН</h6>
+                                <nav class="mb-2">
+                                    <a href="#" class="d-block footer-col-right__info-link">8 (800) 551-02-16</a>
+                                    <a href="#" class="d-block footer-col-right__info-link">info@vamsvet.ru</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="w-75">
+                            </div>
+                            <div class="footer-copyright">
+                                <h6 class="footer-col-title">Присоединяйтесь:</h6>
+                                <div class="d-flex mb-2">
+                                    <a href="#" class="d-block footer-icon mr-1">
+                                        <img src="img/footer/fb.svg" class="mx-100" alt="">
+                                    </a>
+                                    <a href="#" class="d-block footer-icon mr-1">
+                                        <img src="img/footer/vk.svg" class="mx-100" alt="">
+                                    </a>
+                                    <a href="#" class="d-block footer-icon mr-1">
+                                        <img src="img/footer/ok.svg" class="mx-100" alt="">
+                                    </a>
+                                    <a href="#" class="d-block footer-icon mr-1">
+                                        <img src="img/footer/yb.svg" class="mx-100" alt="">
+                                    </a>
+                                    <a href="#" class="d-block footer-icon mr-1">
+                                        <img src="img/footer/in.svg" class="mx-100" alt="">
+                                    </a>
+                                    <a href="#" class="d-block footer-icon mr-1">
+                                        <img src="img/footer/pin.svg" class="mx-100" alt="">
+                                    </a>
+                                </div>
+                                <a href="#" class="d-block pt-1 pb-4" id="user-link">Пользовательское соглашение</a>
+                                <p class="copyright">
+                                    Интернет-магазин ВамСвет © 2009-2020. Все права защищены Продвижение сайтов <a
+                                        href="#">AirMedia</a><a href="#">
+                                        <img src="img/footer/footer-copyright-img.PNG" class="mx-100" alt="">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-xl-none d-lg-flex d-md-flex d-sm-flex d-flex pt-2">
+                    <div class="col footer-border-bottom">
+                        <div class="footer-accordion d-flex">
+                            <div class="footer-accordion-img">
+                                <img src="img/footer/footer-img.PNG" class="mx-100" alt="">
+                            </div>
+                            <h6 class="footer-col-title">КАТАЛОГ</h6>
+                        </div>
+                        <nav class="footer-panel">
+                            <a href="#" class="d-block footer-panel-link">Люстры</a>
+                            <a href="#" class="d-block footer-panel-link ">Светильники</a>
+                            <a href="#" class="d-block footer-panel-link">Бра и подсветки</a>
+                            <a href="#" class="d-block footer-panel-link">Настольные лампы</a>
+                            <a href="#" class="d-block footer-panel-link">Торшеры</a>
+                            <a href="#" class="d-block footer-panel-link">Уличное освещение</a>
+                            <a href="#" class="d-block footer-panel-link">Предметы интерьера</a>
+                            <a href="#" class="d-block footer-panel-link">Лампочки</a>
+                            <a href="#" class="d-block footer-panel-link">Электротовары</a>
+                        </nav>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col footer-border-bottom">
+                        <div class="footer-accordion d-flex">
+                            <div class="footer-accordion-img">
+                                <img src="img/footer/footer-img-1.PNG" class="mx-100" alt="">
+                            </div>
+                            <h6 class="footer-col-title">ПОМОЩЬ</h6>
+                        </div>
+                        <nav class="footer-panel">
+                            <a href="#" class="d-block footer-panel-link">Люстры</a>
+                            <a href="#" class="d-block footer-panel-link ">Светильники</a>
+                            <a href="#" class="d-block footer-panel-link">Бра и подсветки</a>
+                            <a href="#" class="d-block footer-panel-link">Настольные лампы</a>
+                            <a href="#" class="d-block footer-panel-link">Торшеры</a>
+                            <a href="#" class="d-block footer-panel-link">Уличное освещение</a>
+                            <a href="#" class="d-block footer-panel-link">Предметы интерьера</a>
+                            <a href="#" class="d-block footer-panel-link">Лампочки</a>
+                            <a href="#" class="d-block footer-panel-link">Электротовары</a>
+                        </nav>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col footer-border-bottom">
+                        <div class="footer-accordion d-flex">
+                            <div class="footer-accordion-img">
+                                <img src="img/footer/footer-img-2.PNG" class="mx-100" alt="">
+                            </div>
+                            <h6 class="footer-col-title">О КОМПАНИИ</h6>
+                        </div>
+                        <nav class="footer-panel">
+                            <a href="#" class="d-block footer-panel-link">Люстры</a>
+                            <a href="#" class="d-block footer-panel-link ">Светильники</a>
+                            <a href="#" class="d-block footer-panel-link">Бра и подсветки</a>
+                            <a href="#" class="d-block footer-panel-link">Настольные лампы</a>
+                            <a href="#" class="d-block footer-panel-link">Торшеры</a>
+                            <a href="#" class="d-block footer-panel-link">Уличное освещение</a>
+                            <a href="#" class="d-block footer-panel-link">Предметы интерьера</a>
+                            <a href="#" class="d-block footer-panel-link">Лампочки</a>
+                            <a href="#" class="d-block footer-panel-link">Электротовары</a>
+                        </nav>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col footer-border-bottom">
+                        <div class="footer-accordion d-flex">
+                            <div class="footer-accordion-img">
+                                <img src="img/footer/footer-img-3.PNG" class="mx-100" alt="">
+                            </div>
+                            <h6 class="footer-col-title">УСЛУГИ</h6>
+                        </div>
+                        <nav class="footer-panel">
+                            <a href="#" class="d-block footer-panel-link">Люстры</a>
+                            <a href="#" class="d-block footer-panel-link ">Светильники</a>
+                            <a href="#" class="d-block footer-panel-link">Бра и подсветки</a>
+                            <a href="#" class="d-block footer-panel-link">Настольные лампы</a>
+                            <a href="#" class="d-block footer-panel-link">Торшеры</a>
+                            <a href="#" class="d-block footer-panel-link">Уличное освещение</a>
+                            <a href="#" class="d-block footer-panel-link">Предметы интерьера</a>
+                            <a href="#" class="d-block footer-panel-link">Лампочки</a>
+                            <a href="#" class="d-block footer-panel-link">Электротовары</a>
+                        </nav>
+                    </div>
+                    <div class="w-100 mb-2"></div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3  col-md-3 col-sm-3 col-6 footer-nav">
+                                <a href="#" class="d-block text-center mb-2">Распродажа</a>
+                            </div>
+                            <div class="col-xl-3 col-lg-3  col-md-3 col-sm-3 col-6 footer-nav">
+                                <a href="#" class="d-block text-center mb-2">Акции</a>
+                            </div>
+                            <div class="col-xl-3 col-lg-3  col-md-3 col-sm-3 col-6 footer-nav">
+                                <a href="#" class="d-block text-center mb-2">Шоу-Рум</a>
+                            </div>
+                            <div class="col-xl-3 col-lg-3  col-md-3 col-sm-3 col-6 footer-nav">
+                                <a href="#" class="d-block text-center mb-2">Уценка</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 mb-4"></div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex">
+                                    <div class="footer-col-left pr-2">
+                                        <img src="img/footer/footer-img-4.PNG" class="mx-100" alt="">
+                                    </div>
+                                    <div class="footer-col-right">
+                                        <h6 class="footer-col-title">ТЕЛЕФОН</h6>
+                                        <nav class="mb-2">
+                                            <a href="#" class="d-block footer-col-right__info-link">8 (800)
+                                                551-02-16</a>
+                                            <a href="#" class="d-block footer-col-right__info-link">info@vamsvet.ru</a>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="d-flex pl-41">
+                                    <div class="footer-copyright">
+                                        <h6 class="footer-col-title">Присоединяйтесь:</h6>
+                                        <div class="d-flex mb-2">
+                                            <a href="#" class="d-block footer-icon mr-1">
+                                                <img src="img/footer/fb.svg" class="mx-100" alt="">
+                                            </a>
+                                            <a href="#" class="d-block footer-icon mr-1">
+                                                <img src="img/footer/vk.svg" class="mx-100" alt="">
+                                            </a>
+                                            <a href="#" class="d-block footer-icon mr-1">
+                                                <img src="img/footer/ok.svg" class="mx-100" alt="">
+                                            </a>
+                                            <a href="#" class="d-block footer-icon mr-1">
+                                                <img src="img/footer/yb.svg" class="mx-100" alt="">
+                                            </a>
+                                            <a href="#" class="d-block footer-icon mr-1">
+                                                <img src="img/footer/in.svg" class="mx-100" alt="">
+                                            </a>
+                                            <a href="#" class="d-block footer-icon mr-1">
+                                                <img src="img/footer/pin.svg" class="mx-100" alt="">
+                                            </a>
+                                        </div>
+                                        <a href="#" class="d-block pt-1 pb-4" id="user-link">Пользовательское
+                                            соглашение</a>
+                                        <div class="footer-sm-form-1">
+                                            <p class="mt-2 mb-2">
+                                                Хотите быть в курсе акций<br />
+                                                и новых товаров распродажи?
+                                            </p>
+                                            <input type="email" placeholder="Ваш e-mail"
+                                                class="footer-email w-100 mb-2">
+                                            <div class="footer-subscribe-link d-flex justify-content-end mb-2">
+                                                <a href="#">Подписаться</a>
+                                            </div>
+                                        </div>
+                                        <p class="copyright">
+                                            Интернет-магазин ВамСвет © 2009-2020. Все права защищены Продвижение сайтов
+                                            <a href="#">AirMedia</a><a href="#">
+                                                <img src="img/footer/footer-copyright-img.PNG" class="mx-100" alt="">
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-6 footer-sm-form">
+                                <p class="mt-2 mb-2">
+                                    Хотите быть в курсе акций <br />
+                                    и новых товаров распродажи?
+                                </p>
+                                <input type="email" placeholder="Ваш e-mail" class="footer-email w-100 mb-2">
+                                <div class="footer-subscribe-link d-flex justify-content-end mb-2">
+                                    <a href="#">Подписаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- wrapper -->
+    </div>
+    <!-- #main -->
+
+
+    <script src="js/recycleBin.js"></script>
+</body>
+
+</html>
