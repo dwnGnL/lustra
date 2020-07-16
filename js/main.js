@@ -168,9 +168,6 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
   document.getElementById("header").style.marginLeft = "250px";
-  document.getElementById("header").style.transition = "1s";
-  document.getElementById("main").style.transition = "1s";
-  document.getElementById("mySidenav").style.transition = "1s";
   span.style.display = "none";
   span1.style.display = 'block';
   acc1[0].classList.add("active1")
@@ -184,12 +181,43 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
   document.getElementById("header").style.marginLeft = "0";
-  document.getElementById("header").style.transition = "1s";
-  document.getElementById("main").style.transition = "1s";
-  document.getElementById("mySidenav").style.transition = "1s";
   span.style.display = "block";
   span1.style.display = 'none';
 }
 
 
+var wilBeHide = document.getElementById("wilBeHide")
+
+var btn = document.getElementsByClassName("btn");
+
+for(var i = 0; i < btn.length; i++) {
+
+    btn[i].addEventListener("click", s)
+
+}
+
+function s() {
+   wilBeHide.style.display = "none" 
+   console.log(1);
+}
+
+var arr = []
+
+function charAtPos(r, s) {
+	if(s == "even") {	 
+		if(typeof(r) === "object") {
+			return r.filter((el, ind) => ind%2 == 1);			
+		} else if(typeof(r) == "string") {
+			var s = r.split("")
+			return s.filter((el, ind) => ind%2 == 1)
+		}
+ } else if(s == "odd") {
+	if(typeof(r) === "object") {
+		return r.filter((el, ind) => ind%2 == 1);			
+		} else if(typeof(r) == "string") {
+			var s = r.split("")
+			return s.filter((el, ind) => ind%2 == 1)
+		}
+ } 
+}
 

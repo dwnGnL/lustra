@@ -92,13 +92,11 @@ a:hover {
   left: 0;
   background-color: #FCFBFB;
   overflow-x: hidden;
-  transition: 0.5s;
 }
 
 .mySidenav-panel {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
 }
 
 .sidenav-link:hover {
@@ -115,7 +113,7 @@ a:hover {
 
 
 #main {
-  transition: margin-left .5s;
+
 }
 
 #span-close {
