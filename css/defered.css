@@ -1,0 +1,78 @@
+/* homeIcon */
+
+.main-nav > a:nth-child(1):before {
+    content: "";
+    background: url("../img/about/home-link.png")no-repeat center;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    margin-left: -15px;
+    top: 5px;
+}
+ 
+.main-nav > a:nth-child(1) {
+    display: block;
+    padding: 5px 5px 5px 23px;
+    margin-right: 15px;
+}
+
+.main-nav > a:nth-child(1):hover {
+    color: var(--thirdColor);
+}
+
+.main-nav > a:nth-child(1):after {
+    content: '';
+    background: url("../img/about/arrow-down.svg") no-repeat center;
+    width: 4px;
+    height: 9px;
+    position: absolute;
+    top: 12px;
+    margin-left: 10px;
+    margin-top: -4px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.main-nav > span {
+    color: var(--secondColor);
+    display: block; 
+    padding: 5px;
+}
+
+/* homeIcon */
+
+
+@media only screen and (min-width: 1200px) {
+    .ownCol-3 {
+        flex: 1 0 27.1%;
+        max-width: 27.1%;
+    }    
+} 
+
+.p-10 {
+    padding: 10px 10px !important;
+}
+
+.deferedInput {
+    height: 50px;
+    border-radius: 3px;
+    padding-left: 16px;
+    font-size: 16px;
+    border: 1px solid #e5e5e5;
+}
+
+.deferedBtn {
+    height: 50px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#84b33f), to(#8ecc34));
+    background-image: -webkit-linear-gradient(bottom, #84b33f 0%, #8ecc34 100%);
+    background-image: -o-linear-gradient(bottom, #84b33f 0%, #8ecc34 100%);
+    background-image: linear-gradient(to top, #84b33f 0%, #8ecc34 100%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px -5px 36px -24px #000000 inset;
+    box-shadow: 0px -5px 36px -24px #000000 inset;
+}
+
